@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Skills - Mohd Azeem</title>
+  <link rel="stylesheet" href="skills.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #262525;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Logo Bar */
+.logo-bar {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: left;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5db9ee;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  color: #5db9ee;
+  text-align: center;
+  margin: 7rem 0 2rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Item */
+.skill-item {
+  background: #1e1e1e;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #3877ff;
+}
+.skill-title {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #5db9ee;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #333;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 20px;
+}
+.progress {
+  background: linear-gradient(135deg, #5db9ee, #3877ff);
+  height: 100%;
+  line-height: 20px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 0.85rem;
+  color: #fff;
+  animation: fillBar 1.5s ease forwards;
+}
+
+/* Animations */
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .skills-grid {
+    padding: 0 1rem 3rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Logo Bar ===== -->
+  <header class="logo-bar">
+    <div class="logo">Mohd Azeem</div>
+  </header>
+
+  <!-- ===== Coding Skills Section ===== -->
+  <section class="coding-skills-section">
+    <h2 class="section-title">Coding Skills</h2>
+    <div class="skills-grid">
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-title">HTML</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%;">95%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">CSS</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">JavaScript</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">React</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;">80%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">Node.js</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;">75%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">Django</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">Power BI</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;">80%</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-title">SQL</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;">85%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

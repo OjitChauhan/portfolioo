@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Mohd Azeem</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #262525;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Logo Bar */
+.logo-bar {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: left;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5db9ee;
+}
+
+/* About Section */
+.about-section {
+  padding: 7rem 2rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+}
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #5db9ee;
+  box-shadow: 0 0 15px #fff, 0 0 25px #3877ff;
+  transition: 0.4s ease;
+}
+.about-image img:hover {
+  transform: scale(1.05);
+}
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #5db9ee;
+  margin-bottom: 1rem;
+}
+.about-content p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+.about-details strong {
+  color: #5db9ee;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: #1e1e1e;
+  color: #aaa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  text-decoration: none;
+  border: 1px solid #333;
+}
+.social-links a:hover {
+  background: linear-gradient(135deg, #5db9ee, #3877ff);
+  color: white;
+  box-shadow: 0 0 10px #3877ff, 0 0 20px #3877ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+  .about-content h2 {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ===== Logo Bar ===== -->
+  <header class="logo-bar">
+    <div class="logo">Mohd Azeem</div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-image">
+        <img src="WhatsApp Image 2025-08-05 at 12.55.28_9c4172b0.jpg" alt="Mohd Azeem">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I'm <strong>Kanika Chauhan</strong>, a passionate and creative <span>Web Developer</span> who loves transforming ideas into reality through clean and efficient code. With a strong foundation in <strong>MERN Stack</strong>, <strong>Django</strong>, and <strong>Power BI</strong>, I build modern, responsive, and scalable web applications that focus on user experience and performance.
+        </p>
+        <p>
+          Beyond coding, I'm constantly learning and exploring new technologies to sharpen my skills. Whether it's backend logic or frontend magic — I enjoy every part of the development process.
+        </p>
+        <div class="about-details">
+          <div><strong>Email:</strong> ckanika703@gmail.com</div>
+          <div><strong>Location:</strong> India</div>
+          <div><strong>Freelance:</strong> Available</div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="ckanika703@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
